@@ -1,13 +1,13 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import Menu from "../components/layout/Menu.jsx";
+import Content from "../components/layout/Content.jsx";
 
-export default props => {
-    return(
-        <div className="App">
-            <h1>App children</h1>
-            <Menu />
-           
-        </div>
-    )
+export default function App(props) {
+  return (
+    <div className="App">
+      <Menu />
+      <Content />
+    </div>
+  );
 }

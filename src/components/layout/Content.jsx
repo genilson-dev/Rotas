@@ -2,9 +2,13 @@ import './Content.css';
 
 const Content = () => {
   return (
-    <div className="content">
-      <main>Content Area</main>
-      <p>This is where the main content will go.</p>
+    <div className="Content">
+      <main>
+
+      <h1>Componente contet</h1>
+      </main>
     </div>
   );
 }
+
+export default Content;
