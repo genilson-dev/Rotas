@@ -1,13 +1,16 @@
-import React from "react";
 import "./App.css";
-import Menu from "../components/layout/Menu.jsx";
-import Content from "../components/layout/Content.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
+// import Menu from "../components/layout/";
+import Menu from "../components/layout/Menu";
+import Content from "../components/layout/Content";
 
-export default function App(props) {
-  return (
-    <div className="App">
+const App = props => (
+  <div className="App">
+    <Router>
       <Menu />
       <Content />
-    </div>
-  );
-}
+    </Router>
+  </div>
+);
+
+export default App;
