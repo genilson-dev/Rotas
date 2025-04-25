@@ -1,20 +1,19 @@
-
 import "./Content.css";
 import { Route, Routes } from "react-router-dom";
-import About from "../../views/exemples/About.jsx";
-import Home from "../../views/exemples/Home.jsx";
+import About from "../../views/exemples/About";
+import Home from "../../views/exemples/Home";
+import Param from "../../views/exemples/Param";
 
-export default function Content() {
-  return (
-    <div className="Content">
-      <main>
-        <h1>Conteúdo</h1>
+const Content = (props) => (
+  <main className="Content">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      {/* <Route path="/param:/id" element={<Param />} /> */}
+      <Route path="/param/:id" element={<Param />} />
+      
+    </Routes>
+  </main>
+);
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </main>
-    </div>
-  );
-}
+export default Content;
