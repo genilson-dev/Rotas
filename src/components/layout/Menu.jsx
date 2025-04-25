@@ -18,6 +18,9 @@ const Menu = () => (
         <li>
           <Link to="/about">Sobre</Link>
         </li>
+        <li>
+          <Link to="/notFound">Nao encontarda</Link>
+        </li>
       </ul>
     </nav>
 
